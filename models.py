@@ -59,3 +59,4 @@ class VGG16(nn.Module):
         x = torch.flatten(x, 1)  # Flatten to (batch, 512)
         x = self.classifier(x)
         return x
+

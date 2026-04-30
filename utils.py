@@ -55,7 +55,7 @@ class ModelManager:
                 correct += (predicted == labels).sum().item()
         
         accuracy = 100 * correct / total
-        print(f'✓ Test Accuracy: {accuracy:.2f}% ({correct}/{total})')
+        print(f'Test Accuracy: {accuracy:.2f}% ({correct}/{total})')
         return accuracy
     
     def get_model_info(self, model):

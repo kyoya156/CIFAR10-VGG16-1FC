@@ -1,7 +1,7 @@
 import torch
-from VGG import VGG16, CUDANotAvailableError
+from models import VGG16, CUDANotAvailableError
 from data import Dataset
-from model_utils import ModelManager
+from VGG16.utils import ModelManager
 
 CONFIG = {
     'max_epochs': 50,

@@ -44,7 +44,7 @@ class Dataset:
             download=True, 
             transform=self.test_transform
         )
-        print(f"✓ Test set loaded: {len(self.testset)} images")
+        print(f"Test set loaded: {len(self.testset)} images")
         self.testloader = DataLoader(
             self.testset, 
             batch_size=batch_size, 
